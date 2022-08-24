@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+// scss styles for the main page
+
+@import "./web/scss/about.scss";
+@import "./web/scss/education.scss";
+@import "./web/scss/about.scss";
+@import "./web/scss/education.scss";
+@import "./web/scss/footer.scss";
+@import "./web/scss/header.scss";
+@import "./web/scss/home.scss";
+@import "./web/scss/main.scss";
+@import "./web/scss/port.scss";
+@import "./web/scss/section.scss";
+@import "./web/scss/skill.scss";
+@import "./web/scss/slider.scss";
+
+@mixin media($size) {
+    @media (max-width:#{$size}px) {
+        @content
+    }
+}
+
+$mont: 'Montserrat', sans-serif;
+$mons: 'Montserrat Alternates', sans-serif;
+$quids:'Quicksand', sans-serif; 
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #111;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    
+}
